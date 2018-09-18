@@ -12,7 +12,7 @@ class Search extends Component {
 
    state = {
       query: '',
-      newBook: [],
+      newBooks: [],
       searchErr: false
    }
 
@@ -51,10 +51,11 @@ class Search extends Component {
                         <h3>Search returned { newBooks.length } books </h3>
                      </div>
                      <ol className='books-grid'>
-                        {newBooks.map((book) (
-                           <Book
+                        {newBooks.map((book) => (
+                              <Book
                               book={ book }
                               books={ books }
+                              key={ book.id }
                               changeShelf={ changeShelf } />
                         ))}
                      </ol>

@@ -6,7 +6,7 @@ import BookList from './BookList';
 import { Link } from 'react-router-dom';
 import Search from './Search';
 
-class BooksApp extends React.component {
+class BooksApp extends React.Component {
   state = { book: [] }
 
   componentDidMount() {
