@@ -11,7 +11,7 @@ class BookShelf extends Component {
    render() {
       const { book, changeShelf } = this.props
 
-      return {
+      return (
          <ol className='books-grid'>
             {books.map((books) => (
                <Book
@@ -22,7 +22,7 @@ class BookShelf extends Component {
                />
             ))}
          </ol>
-      }
+      )
    }
 }
 
