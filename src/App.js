@@ -23,11 +23,11 @@ class BooksApp extends React.component {
       newBook.shelf = newShelf
 
       //gets book list without update
-      let updateBooks = this.state.books.filter( book => book.id !== newBook.id)
+      let updatedBooks = this.state.books.filter( book => book.id !== newBook.id )
 
       // add book to the array and sets the state
-      updateBook.push(newBook);
-      this.setState({ books: updateBooks })
+      updatedBooks.push(newBook);
+      this.setState({ books: updatedBooks })
     })
   }
 
