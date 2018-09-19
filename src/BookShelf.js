@@ -17,9 +17,8 @@ class BookShelf extends Component {
                <Book
                   book={ book }
                   books={ books }
-                  key={ books.id }
-                  changeShelf={ changeShelf }
-               />
+                  key={ book.id }
+                  changeShelf={ changeShelf }/>
             ))}
          </ol>
       )
